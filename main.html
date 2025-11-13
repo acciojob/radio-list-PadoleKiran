@@ -1,36 +1,35 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Even-positioned elements with .input class should be red */
+    .input:nth-child(even) {
+      color: red;
+    }
+  </style>
 </head>
-
 <body>
-	<div>
-		<input type="radio" id="opn1"> 
-		<label for="opn1">Option 1</label>
+  <div>
+    <input type="radio" id="opn1" name="option">
+    <label for="opn1">Option 1</label>
 
-		<input type="radio" id="opn2" disabled> 
-		<label for="opn2" class="input">Option 2</label>
+    <input type="radio" id="opn2" name="option" disabled>
+    <label for="opn2" class="input">Option 2</label>
 
-		<input type="radio" id="opn3" checked> 
-		<label for="opn3">Option 3</label>
+    <input type="radio" id="opn3" name="option" checked>
+    <label for="opn3">Option 3</label>
 
-		<input type="radio" id="opn4"> 
-		<label for="opn4" class="input">Option 4</label>
+    <input type="radio" id="opn4" name="option">
+    <label for="opn4" class="input">Option 4</label>
 
-		<input type="radio" id="opn5"> 
-		<label for="opn5">Option 5</label>
+    <input type="radio" id="opn5" name="option">
+    <label for="opn5">Option 5</label>
 
-		<input type="radio" id="opn6"> 
-		<label for="opn6" class="input">Option 6</label>
+    <input type="radio" id="opn6" name="option">
+    <label for="opn6" class="input">Option 6</label>
+  </div>
 
-	</div>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+  <script src="./script.js"></script>
 </body>
-
 </html>
